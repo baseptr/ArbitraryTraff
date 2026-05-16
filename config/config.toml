@@ -2,9 +2,6 @@
 address = "0.0.0.0:9000"
 # root_url переопределяется через env LISTMONK_app__root_url (задаётся в Railway Variables)
 root_url = "https://YOUR_DOMAIN"
-# admin credentials переопределяются через env LISTMONK_app__admin_username / _password
-admin_username = "admin"
-admin_password = "admin"
 
 [db]
 # Все значения переопределяются в entrypoint.sh через Railway PostgreSQL vars
