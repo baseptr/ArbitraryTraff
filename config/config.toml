@@ -1,17 +1,19 @@
 [app]
 address = "0.0.0.0:9000"
-# Логин и пароль для первого входа. После установки меняются в самом Listmonk.
-# Переопределяются через env: LISTMONK_app__admin_username / LISTMONK_app__admin_password
+# root_url переопределяется через env LISTMONK_app__root_url (задаётся в Railway Variables)
+root_url = "https://YOUR_DOMAIN"
+# admin credentials переопределяются через env LISTMONK_app__admin_username / _password
 admin_username = "admin"
 admin_password = "admin"
 
 [db]
-# Эти значения переопределяются entrypoint.sh через Railway PostgreSQL vars (PGHOST и т.д.)
+# Все значения переопределяются в entrypoint.sh через Railway PostgreSQL vars
 host = "localhost"
 port = 5432
 user = "listmonk"
 password = ""
 database = "listmonk"
+# disable — для внутренней Railway сети (сервис ↔ postgres в одном проекте)
 ssl_mode = "disable"
 max_open = 25
 max_idle = 25
