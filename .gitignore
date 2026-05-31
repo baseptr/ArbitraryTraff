@@ -2,3 +2,5 @@
 .venv
 TraffArbitrary.iml
 .env.local
+emails.csv
+parse_emails.py
