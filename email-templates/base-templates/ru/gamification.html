@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BetFury</title>
+</head>
+<body style="margin:0;padding:0;background:#0a0a18;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#0a0a18;padding:40px 0;">
+  <tr><td align="center">
+    <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;background:#12122a;border-radius:12px;overflow:hidden;border:1px solid #2a2a50;">
+
+      <!-- Gold top bar -->
+      <tr><td style="background:linear-gradient(90deg,#c8860a,#ffcc44,#c8860a);height:4px;font-size:0;">&nbsp;</td></tr>
+
+      <!-- Header -->
+      <tr><td align="center" style="padding:28px 40px 20px;">
+        <span style="font-size:24px;font-weight:800;color:#ffcc44;letter-spacing:0.08em;text-transform:uppercase;">BetFury</span>
+        <span style="display:block;font-size:10px;color:#666;letter-spacing:0.25em;text-transform:uppercase;margin-top:4px;">Crypto Casino &amp; Sports</span>
+      </td></tr>
+
+      <!-- Campaign content injected here -->
+      <tr><td style="padding:0 40px 32px;color:#ffffff;">
+        {{ template "content" . }}
+      </td></tr>
+
+      <!-- Footer -->
+      <tr><td style="background:#08080f;border-top:1px solid #1e1e40;padding:20px 40px;">
+        <p style="margin:0;font-size:11px;color:#444;line-height:1.8;text-align:center;">
+          Вы получили это письмо как подписчик рассылки CS Master.<br>
+          © 2026 CS Master &nbsp;·&nbsp;
+          <a href="{{ UnsubscribeURL . }}" style="color:#666;text-decoration:underline;">Отписаться</a>
+          &nbsp;·&nbsp;
+          <a href="https://csmaster.cc" style="color:#666;text-decoration:none;">csmaster.cc</a>
+        </p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>
